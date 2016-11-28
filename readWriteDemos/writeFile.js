@@ -1,8 +1,5 @@
 var fs = require('fs');
-var options = {
-	flag : 'a'
-}
-fs.writeFile('./message.txt','这是追加的数据。',options,function(err) {
+fs.writeFile('../readWriteDemos/message.txt','这是第一行。\r\n    这是第二行。',function(err) {
 	if (err) {
 		console.log('写文件操作失败！');
 	} else {

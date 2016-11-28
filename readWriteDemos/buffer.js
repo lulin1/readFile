@@ -1,5 +1,6 @@
 var fs = require('fs');
-fs.writeFile('./message.txt','这是第一行。\r\n    这是第二行。',function(err) {
+var data = new Buffer('我爱编程');
+fs.writeFile('../readWriteDemos/message.txt \n',data,function(err) {
 	if (err) {
 		console.log('写文件操作失败！');
 	} else {
